@@ -25,3 +25,12 @@ viewer.cesiumWidget.creditContainer.style.display = "none";
 viewer.camera.setView({
     destination: Cesium.Cartesian3.fromDegrees(0, 0, 20000000) // Adjust zoom level
 });
+
+// Set up Earth's rotation speed (radians per frame)
+const angularVelocity = Cesium.Math.toRadians(0.02);
+function rotateEarth() {
+  viewer.scene.postRender.addEventListener(() => {
+    viewer.camera.rotate(Cesium.Cartesian3.UNIT_Z, angularVelocity);
+  });
+}
+rotateEarth();
