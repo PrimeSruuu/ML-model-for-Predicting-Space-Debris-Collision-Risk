@@ -1,5 +1,5 @@
 // Replace 'YOUR_CESIUM_ION_TOKEN' with your real token
-Cesium.Ion.defaultAccessToken = 'YOUR_CESIUM_ION_TOKEN';
+Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyZWUyZmNiMS05ZDc4LTRmNjctYTJiNi01Y2M2MzhhNTdjMzAiLCJpZCI6Mjc1ODI3LCJpYXQiOjE3Mzk0NzExNjZ9.Qn9b6Vw2pHbDTdKLPmJoSLcG9W1QGocgKO7KGMfRwa8';
 
 // Initialize Cesium Viewer
 const viewer = new Cesium.Viewer('cesiumContainer', {
